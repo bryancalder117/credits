@@ -107,7 +107,12 @@
 
         let creditsMusic = document.getElementById('creditsMusic');
         creditsMusic.play();
-
+        
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") { // Check if the pressed key is 'Escape'
+                window.location.href = 'index.html'; // Redirect to a new URL
+            }
+        });
     </script>
 </body>
 </html>
